@@ -61,7 +61,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 - `test/X_test.txt`: Test set. dim = 72947 * 561 units = numeric # of measurements
 - `test/y_test.txt`: Test labels. dim = 2947 * 1 units = 1:6 # of activities
 
-##### The folder `traning` which contains:dim = 7352 * 561 units = numeric # of measurements
+##### The folder `training` which contains: 
 - `subject_train.txt`: Subject training set. dim = 7352 * 1 units = 1:30 # of subjects
 - `train/X_train.txt`: Training set. dim = 7352 * 561 units = numeric # of measurements
 - `train/y_train.txt`: Training labels. 7352 * 1 units = 1:6 # of activities
