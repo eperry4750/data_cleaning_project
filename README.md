@@ -5,6 +5,7 @@ The repository contains the following:
   1. the script `run_analysis.R`
   2. the file `README.md`
   3. the file `CodeBook.md`
+  4. the file tidy_data.txt
 	
 # Data
 The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained: 
@@ -19,7 +20,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 # run_analysis.R:
 ### The script `run_analysis.R` will perform the following operations:
-#### Create a data folder
+#### Creates the data folder
 ```
 # if the data folder does not exist, create it
 if(!file.exists("./data")){dir.create("./data")
@@ -41,7 +42,7 @@ if(!file.exists("./data/Dataset.zip")){
 library(dplyr)
 ```
 
-#### Loads both subject files, merges them and names the column.
+#### Loads both subject files,  merges them into the subject table and names the column.
 ```
 # read subject_train.txt and subject_test.txt files into data tables then bind
 # them into a data table called subject with the column named 'subject'.
@@ -50,7 +51,7 @@ subject_test <- read.table('data/UCI HAR Dataset/test/subject_test.txt')
 subject <- rbind(subject_train, subject_test)
 colnames(subject) <- 'subject'
 ```
-#### Loads both activity files, merges them and names the column.
+#### Loads both activity files, merges them into the activity table and names the column.
 ```
 # read y_train.txt and y_test.txt files into data tables then bind them into
 # a data table called activity with the column named 'activity'.
@@ -90,7 +91,7 @@ features <- read.table('data/UCI HAR Dataset/features.txt')
 colnames(phone_data) <- features$V2
 ```
 
-#### Removes all columns that do not include 'std' or 'mean' and ceates the reduced_data table.
+#### Removes all columns that do not include 'std' or 'mean' and creates the reduced_data table.
 ```
 # creates a data table that only contains column names that includes 'std' or 'mean',
 # not case sensitive.
