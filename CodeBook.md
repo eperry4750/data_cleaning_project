@@ -22,7 +22,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 - 'features.txt': List of all features.
 - 'activity_labels.txt': Links the class labels with their activity name.
 - 'train/X_train.txt': Training set.
- - 'train/y_train.txt': Training labels.
+- 'train/y_train.txt': Training labels.
 - 'test/X_test.txt': Test set.
 - 'test/y_test.txt': Test labels.
 
@@ -48,17 +48,20 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 ### The downloaded dataset in `data` includes the following files:
 - `Dataset.zip`
 - `UCI HAR Dataset`
+
 #### The files located in UCI HAR Dataset are:
 - `README.txt`
 - `features.txt`: List of all features.
 - `activity_labels.txt`: Links the class labels with their activity name:
   - `WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING`
 - `features_info.txt`: Detailed information about the features
+
 ##### The folder `test` which contains:
 - `subject_test.txt`: Subject testing set. dim = 2947 * 1 units = 1:30 # of subjects
 - `test/X_test.txt`: Test set. dim = 72947 * 561 units = numeric # of measurements
 - `test/y_test.txt`: Test labels. dim = 2947 * 1 units = 1:6 # of activities
-##### The folder `test` which contains:dim = 7352 * 561 units = numeric # of measurements
+
+##### The folder `traning` which contains:dim = 7352 * 561 units = numeric # of measurements
 - `subject_train.txt`: Subject training set. dim = 7352 * 1 units = 1:30 # of subjects
 - `train/X_train.txt`: Training set. dim = 7352 * 561 units = numeric # of measurements
 - `train/y_train.txt`: Training labels. 7352 * 1 units = 1:6 # of activities
